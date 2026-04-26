@@ -1,5 +1,8 @@
-hashlib
 pandas
 cryptography
 python-jose
 requests
+fastapi
+uvicorn
+jinja2
+python-multipart
