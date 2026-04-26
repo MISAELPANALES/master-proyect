@@ -28,7 +28,7 @@ def procesar_forense(contenido: bytes):
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "resultado": None})
+    return templates.TemplateResponse("index.html", {"request": request, "resultado": None}) # type: ignore
 
 @app.post("/proteger", response_class=HTMLResponse)
 async def proteger(request: Request, file: UploadFile = File(...)):
