@@ -1,3 +1,5 @@
+import hashlib
+
 def protocolo_sentinel(texto, tamaño_bloque=100):
     # Divide el texto en fragmentos (snippets) para rastreo parcial
     palabras = texto.split()
